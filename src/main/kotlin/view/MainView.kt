@@ -10,7 +10,7 @@ class MainView : View() {
     override val root = HBox()
 
     init {
-        title = "Hello TornadoFX Application"
+        title = "Hello Changed Application"
 
         with (root) {
             label(title) {

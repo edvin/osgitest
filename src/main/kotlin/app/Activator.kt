@@ -7,8 +7,7 @@ import java.util.*
 
 class Activator : BundleActivator {
     override fun start(context: BundleContext) {
-        println("Starting bundle!")
-        context.registerService(MyAppProvider::class.java, MyAppProvider(), Hashtable<String, String>())
+        context.registerService(ApplicationProvider::class.java, MyAppProvider(), Hashtable<String, String>())
     }
 
     override fun stop(context: BundleContext) {
